@@ -2,5 +2,5 @@ from rest_framework import generics
 from .serializers import CurrencySerializer
 
 
-class CurrencyView(generics.CreateAPIView):
+class CurrencyCreateView(generics.CreateAPIView):
     serializer_class = CurrencySerializer
