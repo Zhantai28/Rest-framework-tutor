@@ -5,5 +5,6 @@ from .views import *
 
 app_name = 'calc'
 urlpatterns = [
-    path('calc/create/', CurrencyCreateView.as_view())
+    path('create/', CurrencyCreateView.as_view()),
+    path('all/', CurrencyListView.as_view())
 ]
