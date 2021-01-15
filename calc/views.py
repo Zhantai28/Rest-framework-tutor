@@ -10,3 +10,8 @@ class CurrencyCreateView(generics.CreateAPIView):
 class CurrencyListView(generics.ListAPIView):
     serializer_class = CurrencyListSerializer
     queryset = Currency.objects.all()
+
+
+class CurrencyDetailView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = CurrencySerializer
+    queryset = Currency.objects.all()
