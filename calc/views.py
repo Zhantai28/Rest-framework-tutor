@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .serializers import CurrencySerializer
 
-# Create your views here.
+
+class CurrencyView(generics.CreateAPIView):
+    serializer_class = CurrencySerializer
